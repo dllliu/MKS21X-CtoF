@@ -1,16 +1,28 @@
 // The functions should have doubles as parameters, so the type is double
 //The functions should return the equivalent temperature, also as a double.
 
-public class temp
+class FtoCTester {
+
+    public static void main(String[] args)
 {
-    public static double celsiusToFahrenheit(double celcius)
-    {
-    double fahrenheit = (celcius)*(9/5) + 32;
-    return fahrenheit;
+        double fahrenheit = 100.0;
+        double celsius = 0.0;
+
+        celsius = (fahrenheit - 32.0) * (5.0/9.0);
+
+        System.out.println("value of temperature in celsius:" + celsius);
     }
-    public static double fahrenheitToCelsius(double fahrenheit)
-    {
-    double celsius = (fahrenheit-32)*(5/9);
-    return celsius;
-    }
+  }
+
+
+class CtoFTester {
+  public static void main(String[] args)
+{
+        double fahrenheit = 0.0;
+        double celsius = 100.0;
+
+        fahrenheit = (celsius * (9.0/5.0)) + 32.0;
+
+        System.out.println("value of temperature in fahrenheit:" + fahrenheit);
+      }
 }
